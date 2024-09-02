@@ -1,4 +1,4 @@
 import { ANSWER } from "./module";
-import './styles.scss';
+import './src/styles/styles.scss';
 
 console.log('Universe answer: ', ANSWER)
