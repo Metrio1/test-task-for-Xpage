@@ -13,11 +13,11 @@ button,
 input,
 textarea,
 svg * {
+  font-family: var(--font-family-accent);
   transition-duration: var(--transition-duration);
 }
 
 a {
-  font-family:var(--font-family-accent) ;
   text-decoration: none;
   color: inherit;
 }

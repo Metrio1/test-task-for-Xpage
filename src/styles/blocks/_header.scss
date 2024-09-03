@@ -1,0 +1,116 @@
+.header {
+  padding-top: 20px;
+
+  @include desktop {
+    padding-top: 16px;
+
+    .container {
+      margin-inline: 16px;
+    }
+  }
+
+  @include tablet {
+    &__button-text {
+      display: none;
+    }
+  }
+
+
+  &__inner {
+    display: flex;
+    background-color: var(--color-light);
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 64px;
+    height: 80px;
+
+    @include desktop {
+      column-gap: 48px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      max-width: 80px;
+    }
+
+    @include mobile {
+      max-width: 70px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+
+  &__button-menu {
+    display: flex;
+    column-gap: 8px;
+
+    @include tablet {
+        padding: 5px;
+    }
+  }
+
+  &__button-profile {
+    background-image: url('/src/images/profile.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 40px;
+
+    @include tablet {
+      background-position: center;
+      padding: 0;
+      width: 32px;
+    }
+  }
+
+
+  &__menu {
+    margin-right: auto;
+    font-size: 14px;
+
+    @include desktop {
+      font-size: 12px;
+    }
+
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 24px;
+
+      @include desktop {
+        column-gap: 16px;
+      }
+    }
+
+    &-link {
+      text-transform: uppercase;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 52px;
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: inherit;
+      }
+    }
+  }
+}
