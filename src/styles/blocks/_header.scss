@@ -15,17 +15,26 @@
     }
   }
 
+  @include mobile {
+    justify-content: space-between;
+    position: relative;
+  }
+
 
   &__inner {
     display: flex;
     background-color: var(--color-light);
     justify-content: space-between;
     align-items: center;
-    column-gap: 64px;
+    column-gap: 6px;
     height: 80px;
 
-    @include desktop {
-      column-gap: 48px;
+    @include tablet {
+      height: 64px;
+    }
+
+    @include mobile {
+      height: 48px;
     }
   }
 
@@ -36,6 +45,10 @@
 
     @include mobile {
       max-width: 70px;
+      order: 1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -43,6 +56,10 @@
     display: flex;
     align-items: center;
     column-gap: 6px;
+
+    @include mobile {
+      order: -1;
+    }
   }
 
   &__button-menu {
@@ -51,6 +68,13 @@
 
     @include tablet {
         padding: 5px;
+    }
+
+    @include mobile {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 
@@ -64,6 +88,11 @@
       background-position: center;
       padding: 0;
       width: 32px;
+    }
+
+    @include mobile {
+      order: 1;
+      margin-left: auto;
     }
   }
 
@@ -81,9 +110,16 @@
       display: flex;
       align-items: center;
       column-gap: 24px;
+      margin-inline: 64px;
 
       @include desktop {
         column-gap: 16px;
+        margin-inline: 48px;
+      }
+
+      @include tablet {
+        column-gap: 12px;
+        margin-inline: 32px;
       }
     }
 
@@ -93,6 +129,10 @@
       display: inline-flex;
       align-items: center;
       height: 52px;
+
+      @include tablet {
+        height: 36px;
+      }
 
       @include hover {
         &::after {
