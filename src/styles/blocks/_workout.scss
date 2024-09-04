@@ -1,0 +1,45 @@
+.workout {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  row-gap: 20px;
+  position: relative;
+
+  &__button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--color-light);
+
+
+    &-primary {
+      background-color: var(--color-light);
+      color: var(--color-primary-green);
+    }
+  }
+
+  &__feature {
+    border-radius: var(--border-radius);
+    padding: 24px;
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__places {
+    background-image: url("/src/images/1.jpg");
+  }
+
+  &__trainers {
+    background-color: var(--color-primary-green);
+  }
+
+  &__title {
+    width: 70%;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 55%;
+  }
+}

@@ -1,0 +1,21 @@
+.possibilities {
+
+}
+
+.possibility__list {
+  display: flex;
+  column-gap: 9px;
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}
+
+.possibility__item {
+  width: 40%;
+
+  @include mobile {
+    width: 100%;
+  }
+}

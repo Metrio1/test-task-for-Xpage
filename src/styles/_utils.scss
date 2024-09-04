@@ -1,8 +1,8 @@
 .container {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: var(--container-padding-x);
-  padding-inline: var(--container-padding-x);
-  border-radius: var(--container-border-radius);
+  //padding-inline: var(--container-padding-x);
+  border-radius: var(--border-radius);
 }
 
 .visually-hidden {

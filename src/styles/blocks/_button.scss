@@ -12,12 +12,20 @@
   text-transform: uppercase;
 
   @include hover {
-    color: var(--color-light);
     background-color: var(--color-dark);
+    color: var(--color-light);
   }
 
   &--transparent {
     color: var(--color-dark);
     background-color: var(--color-light);
   }
+}
+
+.primary-button {
+  height: 64px;
+  border-radius: var(--border-radius);
+  justify-content: space-between;
+  padding-inline: 24px;
+  font-size: 16px;
 }

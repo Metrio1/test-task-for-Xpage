@@ -46,16 +46,144 @@
         </div>
     </header>
     <main class="content">
-        <section class="section container">
+        <div class="hero container">
+            <h1 class="hero__title">
+                Найди с кем<br>поиграть в баскет
+            </h1>
+            <div class="hero__actions">
+                <button class="hero__button button primary-button" data-bg="1">Играй</button>
+                <button class="hero__button button primary-button" data-bg="2">Учись</button>
+                <button class="hero__button button primary-button" data-bg="3">Смотри</button>
+            </div>
+        </div>
+        <section class="section container ">
+            <header class="section__header">
+                <h1 class="section__title">
+                    Играй
+                </h1>
+                <a class="section__header-link">
+                    В раздел
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3553 4V8.28571H1V14.7143H12.3553V19L23 11.5L12.3553 4Z" fill="white"/>
+                    </svg>
+                </a>
+            </header>
             <div class="section__body">
-                <div class="hero">
-                    <h1 class="hero__title">
-                        Найди с кем<br>поиграть в баскет
-                    </h1>
-                    <div class="hero__actions">
-                        <button class="hero__button button" data-bg="1">Играй</button>
-                        <button class="hero__button button" data-bg="2">Учись</button>
-                        <button class="hero__button button" data-bg="3">Смотри</button>
+                <div class="possibilities">
+                    <ul class="possibility__list">
+                        <li class="possibility__item">
+                            <article class="possibility-card">
+                                <img src="./images/find-command.jpg" alt="" class="possibility-card__image">
+                                <div class="possibility-card__body">
+                                    <div class="possibility-card__text">
+                                        <h3 class="possibility-card__title">Найди себе команду</h3>
+                                        <p class="possibility-card__description">
+                                            Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.
+                                        </p>
+                                    </div>
+                                    <button class="possibility-card__button button primary-button">Текст кнопки</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="possibility__item">
+                            <article class="possibility-card">
+                                <img src="./images/basketball_ball.png" alt="" class="possibility-card__image possibility-card__image-ball">
+                                <div class="possibility-card__body">
+                                    <div class="possibility-card__text">
+                                        <h3 class="possibility-card__title">Создавай команды</h3>
+                                        <p class="possibility-card__description">
+                                            Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.
+                                        </p>
+                                    </div>
+                                    <button class="possibility-card__button button primary-button">Текст кнопки</button>
+                                </div>
+
+                            </article>
+                        </li>
+                        <li class="possibility__item">
+                            <article class="possibility-card">
+                                <img src="./images/tournaments.jpg" alt="" class="possibility-card__image">
+                                <div class="possibility-card__body">
+                                    <div class="possibility-card__text">
+                                        <h3 class="possibility-card__title">Участвуй в турнирах</h3>
+                                        <p class="possibility-card__description">
+                                            Участвуйте в турнирах вместе с вашей командой.<br>Будьте активными, побеждайте и получайте ачивки и призы от наших спонсоров.
+                                        </p>
+                                    </div>
+                                    <button class="possibility-card__button button primary-button">Текст кнопки</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section container section__light">
+            <header class="section__header">
+                <h1 class="section__title">
+                    Учись
+                </h1>
+                <a href="" class="section__header-link">
+                    В раздел
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.3553 4V8.28571H1V14.7143H12.3553V19L23 11.5L12.3553 4Z" fill="white"/>
+                    </svg>
+                </a>
+            </header>
+            <div class="section__body">
+                <div class="education">
+                    <div class="workout">
+                        <article class="workout__places workout__feature">
+                            <h2 class="workout__title">Мы собрали секции для детей по всему городу</h2>
+                            <div class="workout__actions">
+                                <button class="workout__button button workout__button-primary">12 секций по всему городу</button>
+                            </div>
+                        </article>
+                        <article class="workout__trainers workout__feature">
+                            <h2 class="workout__title">Подбери тренера под свой  уровень</h2>
+                            <div class="workout__actions">
+                                <button class="workout__button button">Детская тренировка</button>
+                                <button class="workout__button button">Для начинающих</button>
+                                <button class="workout__button button">Стритбол</button>
+                                <button class="workout__button button">Выезд тренера на дом</button>
+                                <button class="workout__button button workout__button-primary">12 фильтров</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="materials">
+                        <ul class="material__list">
+                            <li class="material__item">
+                                <article class="material-card">
+                                    <h4 class="material-card__title">Видеоуроки</h4>
+                                    <div class="material-card__body">
+                                        <img src="./images/match.jpg" alt="" class="material-card__image">
+                                        <div class="material-card__text">
+                                            <h5>Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</h5>
+                                            <button class="material-card__button button">26 октября</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="material__item">
+                                <article class="material-card">
+                                    <h4 class="material-card__title">Статьи</h4>
+                                    <div class="material-card__text">
+                                        <h5>Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</h5>
+                                        <button class="material-card__button button">26 октября</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="material-card__item">
+                                <article class="material-card">
+                                    <h4 class="material__title">Термины</h4>
+                                    <div class="material-card__actions">
+                                        <button class="material-card__button button">Треха</button>
+                                        <button class="material-card__button button">Треховчковый бросок</button>
+                                        <button class="material-card__button button">36 терминов</button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -66,11 +194,11 @@
     document.querySelectorAll('.hero__button').forEach(button => {
         button.addEventListener('mouseenter', function() {
             const backgroundImage = this.getAttribute('data-bg');
-            document.querySelector('.section').style.backgroundImage = `url('./images/${backgroundImage}.jpg')`;
+            document.querySelector('.hero').style.backgroundImage = `url('./images/${backgroundImage}.jpg')`;
         });
 
         button.addEventListener('mouseleave', function() {
-            document.querySelector('.section').style.backgroundImage = `url('./images/3.jpg')`;
+            document.querySelector('.hero').style.backgroundImage = `url('./images/3.jpg')`;
         });
     });
 </script>
