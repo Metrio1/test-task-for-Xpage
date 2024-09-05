@@ -3,6 +3,10 @@
   margin-inline: var(--container-margin-x);
   border-radius: var(--border-radius);
 
+  @include mobile {
+    border-radius: var(--border-radius-mobile);
+  }
+
 }
 
 .hidden-desktop {

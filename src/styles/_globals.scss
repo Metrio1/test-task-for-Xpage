@@ -80,6 +80,10 @@ h5 {
     background-image: url("/src/images/right_arrow_orange.svg");
     width: 24px;
     height: 24px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -91,6 +95,10 @@ h5 {
     background-image: url("/src/images/right_arrow_green.svg");
     width: 24px;
     height: 24px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 

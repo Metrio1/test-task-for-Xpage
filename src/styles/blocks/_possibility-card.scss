@@ -1,5 +1,6 @@
 .possibility-card {
   display: flex;
+  height: clamp(546px, 45vw, 784px);
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--color-light);
@@ -9,6 +10,10 @@
   @include hover {
     background-color: var(--color-dark);
     color: var(--color-light);
+  }
+
+  @include mobile {
+    height: clamp(446px, 90vw, 784px);
   }
 
   &__image {
@@ -39,7 +44,7 @@
     padding: 24px 24px 0 24px;
 
     @include mobile {
-      padding: 12px;
+      padding: 12px 12px 0 12px;
     }
   }
 
@@ -50,6 +55,7 @@
     width: 75%;
 
     @include mobile {
+      width: 100%;
       row-gap: 8px;
     }
   }
@@ -90,6 +96,10 @@
       height: 64px;
       opacity: 1;
       margin-bottom: 24px;
+
+      @include mobile {
+        margin-bottom: 4px;
+      }
     }
   }
 }
