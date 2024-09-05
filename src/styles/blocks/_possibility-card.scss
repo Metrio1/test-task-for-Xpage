@@ -27,7 +27,7 @@
       border-radius: 10px;
       position: relative;
       overflow: hidden;
-      margin-top: -10%;
+      margin-top: -20%;
       left: 20%;
     }
   }
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    padding: 24px;
+    padding: 24px 24px 0 24px;
 
     @include mobile {
       padding: 12px;
@@ -44,7 +44,14 @@
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
     width: 75%;
+
+    @include mobile {
+      row-gap: 8px;
+    }
   }
 
   &__button {
@@ -56,6 +63,7 @@
     transition: height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     padding-inline: 20px;
+
 
     &::after {
       content: '';
@@ -81,6 +89,7 @@
     .possibility-card__button {
       height: 64px;
       opacity: 1;
+      margin-bottom: 24px;
     }
   }
 }
