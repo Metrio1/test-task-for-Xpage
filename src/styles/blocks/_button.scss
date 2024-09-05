@@ -11,6 +11,11 @@
   border-radius: var(--border-radius-huge);
   text-transform: uppercase;
 
+  @include mobile {
+    font-size: 10px;
+    padding-block: 6px;
+  }
+
   @include hover {
     background-color: var(--color-dark);
     color: var(--color-light);

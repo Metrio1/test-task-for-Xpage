@@ -1,8 +1,13 @@
 .education {
   display: inline-grid;
   grid-template-columns: 2fr 1fr;
-  height: 925px;
+  min-height: 925px;
   column-gap: 32px;
+
+  @include mobile {
+    min-height: 800px;
+    grid-template-columns: 1fr;
+  }
 
   &__line {
     height: 100%;

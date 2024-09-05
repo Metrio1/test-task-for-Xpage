@@ -4,6 +4,11 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
 
   &__body {
     display: flex;
@@ -20,5 +25,26 @@
 
   &__button {
     align-self: start;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    @include hover {
+      color: var(--color-primary-green);
+
+      &::after {
+        content: '';
+        background-image: url("/src/images/right_arrow_green.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        opacity: 1;
+        vertical-align: middle;
+      }
+    }
   }
 }

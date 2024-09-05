@@ -10,11 +10,11 @@
         <div class="header__inner container">
             <a href="" class="header__logo logo">
                 <img
-                    class="header__logo-image"
-                    src="./images/logo.svg"
-                    alt="Xpage"
-                    width="99" height="25" loading="lazy"
-                    >
+                        class="header__logo-image"
+                        src="./images/logo.svg"
+                        alt="Xpage"
+                        width="99" height="25" loading="lazy"
+                >
             </a>
             <nav class="header__menu hidden-mobile">
                 <ul class="header__menu-list">
@@ -61,11 +61,8 @@
                 <h1 class="section__title">
                     Играй
                 </h1>
-                <a class="section__header-link">
+                <a href="" class="section__header-link orange-link">
                     В раздел
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.3553 4V8.28571H1V14.7143H12.3553V19L23 11.5L12.3553 4Z" fill="white"/>
-                    </svg>
                 </a>
             </header>
             <div class="section__body">
@@ -123,11 +120,8 @@
                 <h1 class="section__title">
                     Учись
                 </h1>
-                <a href="" class="section__header-link">
+                <a href="" class="section__header-link green-link">
                     В раздел
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.3553 4V8.28571H1V14.7143H12.3553V19L23 11.5L12.3553 4Z" fill="white"/>
-                    </svg>
                 </a>
             </header>
             <div class="section__body">
@@ -150,13 +144,13 @@
                             </div>
                         </article>
                     </div>
-                    <div class="materials">
+                    <div class="materials hidden-mobile">
                         <ul class="material__list">
                             <li class="material__item">
                                 <article class="material-card">
                                     <h4 class="material-card__title">Видеоуроки</h4>
                                     <div class="material-card__body">
-                                        <img src="./images/match.jpg" alt="" class="material-card__image">
+                                        <img src="./images/match.jpg" alt="" class="material-card__image hidden-desktop" width="270" height="152">
                                         <div class="material-card__text">
                                             <h5>Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</h5>
                                             <button class="material-card__button button">26 октября</button>
@@ -175,7 +169,7 @@
                             </li>
                             <li class="material-card__item">
                                 <article class="material-card">
-                                    <h4 class="material__title">Термины</h4>
+                                    <h4 class="material-card__title">Термины</h4>
                                     <div class="material-card__actions">
                                         <button class="material-card__button button">Треха</button>
                                         <button class="material-card__button button">Треховчковый бросок</button>
@@ -189,6 +183,46 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__body container">
+            <div class="footer__text">
+                <div class="footer__app-advertising">
+                    <h2 class="footer__header">Еще больше полезных материалов и видеоуроков в нашем приложении</h2>
+                    <div class="footer__apps">
+                        <div class="footer__app-store footer__app">
+                            <svg width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.8771 9.281C18.59 13.7699 18.8398 17.5276 23.8209 20.7723C22.6495 23.3255 21.4689 25.9546 18.9716 27.49C18.0733 28.0423 16.5047 28.0875 15.4733 27.7183C13.4119 26.9802 11.5045 26.845 9.51768 27.7463C7.9665 28.4502 6.56349 28.2415 5.22276 27.1536C1.42437 24.0732 -0.97889 16.3819 0.38648 11.7055C1.45653 8.04053 5.631 4.58741 10.1566 7.01052C11.8539 7.91905 13.4146 7.48617 15.0613 6.81204C18.2886 5.49116 20.8318 6.3422 22.8771 9.281Z" fill="#202020"/>
+                                <path d="M17.0436 0C17.392 3.36996 15.2009 6.08804 11.9113 6.48294C11.1209 3.56057 13.5097 0.479761 17.0436 0Z" fill="#202020"/>
+                            </svg>
+                            <div class="footer__app-description">
+                                <span class="thin-font">Download on the</span>
+                                <span>App store</span>
+                            </div>
+                        </div>
+                        <div class="footer__google-play footer__app">
+                            <svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.709169 3.58058C0.708645 7.50655 0.708907 11.4325 0.708907 15.3585C0.708645 19.4591 0.701314 23.5594 0.717547 27.6603C0.719642 28.2198 0.777508 28.7953 0.91759 29.3352C1.23022 30.5392 2.24431 31.0809 3.43147 30.6884C3.92241 30.5261 4.38717 30.2679 4.84093 30.0129C10.273 26.9607 15.7047 23.9074 21.1281 20.8392C23.0241 19.7665 24.903 18.6631 26.7778 17.5534C28.99 16.244 28.9662 14.5227 26.7333 13.1986C26.6209 13.1318 26.5081 13.0653 26.3944 13.0006C19.3162 8.97989 12.2378 4.95993 5.15959 0.939187C1.9809 -0.86643 0.70943 -0.112082 0.709169 3.58058Z" fill="#ECECEC"/>
+                                <path d="M1.72461 1.7671C1.72461 10.9031 1.72461 19.8783 1.72461 28.6953C6.22635 24.2263 10.7472 19.7382 15.2259 15.2919C10.8347 10.8931 6.36983 6.42044 1.72461 1.7671ZM2.94372 0.726562C2.92722 0.786523 2.91046 0.846745 2.89397 0.906705C7.37947 5.38226 11.865 9.85781 16.2217 14.2051C17.4164 13.0258 18.7125 11.7467 20.062 10.4147C14.3791 7.19861 8.66142 3.96259 2.94372 0.726562ZM20.0623 20.3627C18.6905 18.9906 17.4101 17.7103 16.2785 16.5783C11.8553 20.9892 7.38549 25.4465 2.9157 29.9037C2.93089 29.9537 2.94633 30.0034 2.96152 30.0534C8.67739 26.8143 14.3933 23.5751 20.0623 20.3627ZM16.9095 15.1307C18.4967 16.7061 19.9347 18.1339 21.4089 19.597C23.0592 18.6558 24.8586 17.6739 26.6113 16.6147C27.7895 15.9028 27.8532 14.9633 26.7467 14.2713C25.085 13.2321 23.3624 12.2884 21.6398 11.3516C21.4214 11.233 20.9436 11.2874 20.7619 11.454C19.4171 12.6864 18.1171 13.9676 16.9095 15.1307Z" fill="#202020"/>
+                            </svg>
+                            <div class="footer__app-description">
+                                <span class="thin-font">Get it on</span>
+                                <span>Google Play</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="footer__producer">Сделано в Xpage</span>
+            </div>
+            <div class="qr-code hidden-tablet">
+                <img src="./images/qr-code.svg" alt="" class="qr-code__image" width="180" height="180">
+                <div class="qr-code__text">
+                    <span class="qr-code__system thin-font">iOS / Android</span>
+                    <p class="qr-code__description">Наведите камеру устройства на QR-код, чтобы скачать</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__ball"></div>
+    </footer>
 </body>
 <script>
     document.querySelectorAll('.hero__button').forEach(button => {

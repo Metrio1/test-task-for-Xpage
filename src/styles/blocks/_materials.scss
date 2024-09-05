@@ -12,26 +12,29 @@
   }
 }
 
-.material__list {
-  height: 100%;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 40px;
-}
+.material {
 
-.material__item {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-gray);
+  &__list {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 40px;
   }
-  &:last-child::after {
-    display: none;
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: var(--color-gray);
+    }
+    &:last-child::after {
+      display: none;
+    }
   }
 }

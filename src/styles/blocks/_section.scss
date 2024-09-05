@@ -1,12 +1,21 @@
 .section {
-  padding-block: var(--section-padding-y);
   border-radius: var(--border-radius);
+  margin-bottom: var(--section-margin-bottom);
+
+  @include mobile {
+    padding-block: 0;
+    margin-bottom: 42px;
+  }
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 64px;
+
+    @include mobile {
+      margin-bottom: 21px;
+    }
 
     &-link {
       text-transform: uppercase;
@@ -18,6 +27,11 @@
   &__light {
     background-color: var(--color-light);
     padding: 32px;
+
+    @include mobile {
+      background-color: transparent;
+      padding: 0;
+    }
   }
 }
 

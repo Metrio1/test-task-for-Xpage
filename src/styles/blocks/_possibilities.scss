@@ -4,6 +4,7 @@
 
 .possibility__list {
   display: flex;
+  align-items: stretch;
   column-gap: 9px;
 
   @include mobile {
@@ -13,7 +14,10 @@
 }
 
 .possibility__item {
-  width: 40%;
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+
 
   @include mobile {
     width: 100%;

@@ -9,8 +9,7 @@
   justify-content: end;
   padding: 20px;
   transition-duration: var(--transition-duration);
-
-
+  margin-bottom: var(--section-margin-bottom);
   row-gap: 48px;
 
   @include desktop {
@@ -22,6 +21,7 @@
   }
 
   @include mobile {
+    margin-bottom: 42px;
     row-gap: 12px;
     padding: 12px;
     background-image: url('/src/images/3-mobile.jpg');

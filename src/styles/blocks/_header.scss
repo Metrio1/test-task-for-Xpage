@@ -20,15 +20,21 @@
 
 
   &__inner {
+    padding-inline: 20px;
     display: flex;
     background-color: var(--color-light);
     justify-content: space-between;
     align-items: center;
-    padding-inline: 20px;
+
     column-gap: 6px;
     height: 80px;
 
+    @include desktop {
+      column-gap: 0;
+    }
+
     @include tablet {
+      column-gap: 6px;
       height: 64px;
     }
 
@@ -64,6 +70,10 @@
   &__button-menu {
     display: flex;
     column-gap: 8px;
+
+    @include desktop {
+      column-gap: 6px;
+    }
 
     @include tablet {
         padding: 5px;
@@ -103,7 +113,6 @@
       font-size: 12px;
     }
 
-
     &-list {
       display: flex;
       align-items: center;
@@ -111,12 +120,11 @@
       margin-inline: 64px;
 
       @include desktop {
-        column-gap: 16px;
+        column-gap: 12px;
         margin-inline: 48px;
       }
 
       @include tablet {
-        column-gap: 12px;
         margin-inline: 32px;
       }
     }
