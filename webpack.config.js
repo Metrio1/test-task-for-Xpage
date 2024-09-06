@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',  // Указываем путь к вашему HTML файлу
+            template: './src/index.html',
         }),
         new CopyWebpackPlugin({
             patterns: [
